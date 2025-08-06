@@ -1,0 +1,219 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[sfdefault]{roboto}
+\usepackage{xcolor}
+
+% Define colors
+\definecolor{accent}{RGB}{0, 102, 204}
+\definecolor{darkgray}{RGB}{64, 64, 64}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{accent}
+}{}{0em}{}[\color{accent}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Alex Chen} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 555-123-4567 ~ 
+    \href{mailto:alex.chen@email.com}{\raisebox{-0.2\height}\faEnvelope\ alex.chen@email.com} ~ 
+    \href{https://linkedin.com/in/alexchen}{\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/alexchen} ~
+    \href{https://github.com/alexchen}{\raisebox{-0.2\height}\faGithub\ github.com/alexchen}
+    \vspace{-8pt}
+\end{center}
+
+% Two column layout
+\begin{minipage}[t]{0.32\textwidth}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \textbf{Languages} \\
+ \small{Python, R, SQL, Scala, Java} \\
+ 
+ \textbf{ML/DL Frameworks} \\
+ \small{PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM} \\
+ 
+ \textbf{MLOps \& Cloud} \\
+ \small{MLflow, Kubeflow, Docker, Kubernetes, AWS, GCP, Azure} \\
+ 
+ \textbf{Data Engineering} \\
+ \small{Spark, Kafka, Hadoop, Snowflake, Databricks} \\
+ 
+ \textbf{LLM \& NLP} \\
+ \small{LangChain, Hugging Face, OpenAI API, BERT, GPT} \\
+ 
+ \textbf{DevOps} \\
+ \small{Jenkins, GitHub Actions, Terraform, Prometheus} \\
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {M.S. in Computer Science}{2020 -- 2022}
+      \resumeItemListStart
+        \resumeItem{Focus: Artificial Intelligence}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {UC Berkeley}{Berkeley, CA}
+      {B.S. in EECS}{2016 -- 2020}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.8/4.0, Magna Cum Laude}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\small{
+\textbf{AWS ML Specialty} (2023) \\
+\textbf{GCP ML Engineer} (2023) \\
+\textbf{TensorFlow Developer} (2022)
+}
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Experienced Machine Learning Engineer with 4+ years developing and deploying scalable ML systems in production. Expertise in end-to-end ML pipeline development, from data preprocessing to model deployment and monitoring. Proven track record of building recommendation systems, NLP applications, and computer vision models serving millions of users.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Machine Learning Engineer}{Jan 2023 -- Present}
+      {Meta}{Menlo Park, CA}
+      \resumeItemListStart
+        \resumeItem{Led development of recommendation system serving 50M+ daily users, improving engagement by 15\%}
+        \resumeItem{Built real-time feature engineering pipeline using Kafka and Spark, reducing latency by 40\%}
+        \resumeItem{Implemented A/B testing framework for ML models, enabling data-driven deployment}
+        \resumeItem{Mentored 3 junior engineers and established ML best practices across the team}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer}{Jun 2022 -- Dec 2022}
+      {Uber}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Developed demand forecasting models using LSTM and Transformers, improving accuracy by 25\%}
+        \resumeItem{Built MLOps pipeline with MLflow and Kubernetes, automating training and deployment}
+        \resumeItem{Optimized model inference latency from 200ms to 50ms using TensorRT and quantization}
+        \resumeItem{Collaborated with product teams to integrate ML models into mobile applications}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ML Engineering Intern}{Jun 2021 -- Sep 2021}
+      {Google}{Mountain View, CA}
+      \resumeItemListStart
+        \resumeItem{Implemented BERT-based text classification for content moderation, achieving 92\% accuracy}
+        \resumeItem{Developed data preprocessing pipeline handling 10TB+ of text data using Apache Beam}
+        \resumeItem{Created model monitoring dashboard using TensorBoard and custom metrics}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{LLM-Powered Code Review Assistant} $|$ \emph{Python, LangChain, OpenAI API}}{2024}
+          \resumeItemListStart
+            \resumeItem{Built intelligent code review system using GPT-4 and custom prompting strategies}
+            \resumeItem{Integrated with GitHub API to analyze pull requests, processing 500+ reviews daily}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Real-time Fraud Detection System} $|$ \emph{Python, XGBoost, Kafka, Redis}}{2023}
+          \resumeItemListStart
+            \resumeItem{Designed ML pipeline for real-time fraud detection with sub-100ms latency}
+            \resumeItem{Achieved 95\% precision and 88\% recall using ensemble methods}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Medical Image Classification} $|$ \emph{PyTorch, OpenCV, AWS SageMaker}}{2022}
+          \resumeItemListStart
+            \resumeItem{Developed CNN model achieving 94\% accuracy using transfer learning}
+            \resumeItem{Deployed with AWS SageMaker with automatic scaling and monitoring}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{"Scalable Real-time Recommendation Systems"} $|$ \emph{KDD 2023}}{2023}
+        \resumeProjectHeading
+            {\textbf{"Efficient Model Serving for Large-scale ML Applications"} $|$ \emph{MLSys 2022}}{2022}
+    \resumeSubHeadingListEnd
+
+\end{minipage}
+
+\end{document}

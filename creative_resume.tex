@@ -1,0 +1,177 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.3in, bottom=0.4in, left=0.3in, right=0.8in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+% Define colors
+\definecolor{primary}{RGB}{52, 73, 94}
+\definecolor{secondary}{RGB}{149, 165, 166}
+\definecolor{accent}{RGB}{231, 76, 60}
+\definecolor{lightgray}{RGB}{236, 240, 241}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\cvsection}[1]{
+    \vspace{10pt}
+    {\color{primary}\Large\bfseries #1}
+    \vspace{5pt}
+    \hrule
+    \vspace{10pt}
+}
+
+\newcommand{\cvsubsection}[4]{
+    \textbf{\color{primary}#1} \hfill {\color{secondary}\textit{#2}} \\
+    {\color{accent}\textit{#3}} \hfill {\color{secondary}#4} \\
+    \vspace{5pt}
+}
+
+\newcommand{\cvitem}[1]{
+    \item #1
+}
+
+\newcommand{\skillbar}[2]{
+    \textbf{#1} \\
+    \begin{tikzpicture}
+        \draw[fill=lightgray, lightgray] (0,0) rectangle (5,0.3);
+        \draw[fill=accent, accent] (0,0) rectangle (#2,0.3);
+    \end{tikzpicture}
+    \vspace{3pt}
+}
+
+\begin{document}
+
+% Header with colored background
+\begin{tikzpicture}[remember picture,overlay]
+    \node [rectangle, fill=primary, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
+\end{tikzpicture}
+
+\vspace{-1cm}
+\begin{center}
+    {\color{white}\Huge\bfseries ALEX JOHNSON}\\
+    \vspace{5pt}
+    {\color{white}\Large Creative Software Developer}\\
+    \vspace{10pt}
+    {\color{white}
+    \faEnvelope\ alex.johnson@email.com \quad
+    \faPhone\ +1 (555) 123-4567 \quad
+    \faLinkedin\ linkedin.com/in/alexjohnson \quad
+    \faGithub\ github.com/alexjohnson
+    }
+\end{center}
+
+\vspace{1cm}
+
+% Two column layout
+\begin{minipage}[t]{0.35\textwidth}
+
+\cvsection{SKILLS}
+
+\skillbar{JavaScript/TypeScript}{4.5}
+\skillbar{React/Vue.js}{4.2}
+\skillbar{Node.js}{4.0}
+\skillbar{Python}{4.3}
+\skillbar{UI/UX Design}{3.8}
+\skillbar{Docker/Kubernetes}{3.5}
+\skillbar{AWS/Cloud}{3.7}
+\skillbar{Git/DevOps}{4.1}
+
+\cvsection{EDUCATION}
+
+\textbf{\color{primary}Bachelor of Computer Science}\\
+{\color{secondary}Stanford University}\\
+{\color{accent}2020 - 2024}\\
+{\color{secondary}GPA: 3.9/4.0}\\
+\vspace{5pt}
+
+\textbf{\color{primary}Relevant Coursework:}\\
+{\color{secondary}
+• Human-Computer Interaction\\
+• Machine Learning\\
+• Software Engineering\\
+• Database Systems\\
+• Computer Graphics
+}
+
+\cvsection{CERTIFICATIONS}
+
+\textbf{\color{primary}AWS Solutions Architect}\\
+{\color{secondary}Amazon Web Services (2024)}\\
+\vspace{3pt}
+
+\textbf{\color{primary}Google UX Design Certificate}\\
+{\color{secondary}Google (2023)}\\
+\vspace{3pt}
+
+\textbf{\color{primary}React Developer Certification}\\
+{\color{secondary}Meta (2023)}\\
+
+\cvsection{LANGUAGES}
+
+\textbf{\color{primary}English} - Native\\
+\textbf{\color{primary}Spanish} - Fluent\\
+\textbf{\color{primary}Mandarin} - Conversational\\
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.6\textwidth}
+
+\cvsection{PROFESSIONAL EXPERIENCE}
+
+\cvsubsection{Senior Frontend Developer}{Jan 2024 - Present}{TechFlow Solutions}{San Francisco, CA}
+\begin{itemize}[leftmargin=15pt]
+    \cvitem{Led development of responsive web applications serving 50K+ daily users}
+    \cvitem{Architected micro-frontend system reducing deployment time by 60\%}
+    \cvitem{Mentored team of 4 junior developers in modern React patterns}
+    \cvitem{Implemented design system that improved development velocity by 40\%}
+\end{itemize}
+
+\cvsubsection{Full Stack Developer}{Jun 2023 - Dec 2023}{StartupXYZ}{Remote}
+\begin{itemize}[leftmargin=15pt]
+    \cvitem{Built MVP from scratch using React, Node.js, and PostgreSQL}
+    \cvitem{Designed and implemented RESTful APIs handling 10K+ requests/day}
+    \cvitem{Collaborated with designers to create intuitive user experiences}
+    \cvitem{Achieved 99.9\% uptime through robust error handling and monitoring}
+\end{itemize}
+
+\cvsubsection{Software Engineering Intern}{May 2022 - Aug 2022}{Google}{Mountain View, CA}
+\begin{itemize}[leftmargin=15pt]
+    \cvitem{Developed Chrome extension features used by millions of users}
+    \cvitem{Optimized rendering performance resulting in 25\% faster load times}
+    \cvitem{Participated in code reviews and contributed to open-source projects}
+\end{itemize}
+
+\cvsection{FEATURED PROJECTS}
+
+\textbf{\color{primary}EcoTracker Mobile App} \hfill {\color{secondary}2024}\\
+{\color{accent}React Native, Firebase, Machine Learning}\\
+Environmental impact tracking app with AI-powered recommendations. Featured in Apple App Store with 10K+ downloads and 4.8-star rating.\\
+
+\textbf{\color{primary}Real-time Collaboration Platform} \hfill {\color{secondary}2023}\\
+{\color{accent}WebRTC, Socket.io, React, Node.js}\\
+Built collaborative whiteboard application supporting 100+ concurrent users. Implemented real-time synchronization and conflict resolution algorithms.\\
+
+\textbf{\color{primary}AI-Powered Code Review Tool} \hfill {\color{secondary}2023}\\
+{\color{accent}Python, TensorFlow, GitHub API}\\
+Developed machine learning model to automatically detect code quality issues. Achieved 85\% accuracy in identifying potential bugs and security vulnerabilities.\\
+
+\cvsection{ACHIEVEMENTS \& AWARDS}
+
+\begin{itemize}[leftmargin=15pt]
+    \cvitem{\textbf{\color{primary}Winner} - Stanford Hackathon 2023 (Best AI Application)}
+    \cvitem{\textbf{\color{primary}Top 1\%} - LeetCode Global Ranking (2023)}
+    \cvitem{\textbf{\color{primary}Dean's List} - 6 consecutive semesters}
+    \cvitem{\textbf{\color{primary}Open Source Contributor} - 500+ GitHub contributions}
+\end{itemize}
+
+\end{minipage}
+
+\end{document}

@@ -1,0 +1,30 @@
+# LaTeX compilation and document processing
+pygments>=2.15.0
+# For syntax highlighting in LaTeX documents
+
+# PDF processing and manipulation
+PyPDF2>=3.0.0
+# For PDF manipulation if needed
+
+# Document conversion utilities
+pandoc>=2.0.0
+# For document format conversion
+
+# Optional: Jupyter notebook support for LaTeX
+nbconvert>=7.0.0
+# For converting notebooks to LaTeX
+
+# Optional: Plotting and visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+# For generating plots that can be included in LaTeX documents
+
+# Optional: Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+# For data analysis that might inform resume content
+
+# Optional: Web scraping for job market research
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+# For gathering job posting data to optimize resume keywords

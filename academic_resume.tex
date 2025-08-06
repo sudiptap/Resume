@@ -1,0 +1,231 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{etaremune}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing{\section}{0pt}{12pt}{6pt}
+\titlespacing{\subsection}{0pt}{8pt}{4pt}
+
+% Custom commands
+\newcommand{\name}[1]{\begin{center}\textbf{\Large #1}\end{center}}
+\newcommand{\contact}[1]{\begin{center}#1\end{center}}
+\newcommand{\entry}[4]{\textbf{#1} \hfill #2 \\ \textit{#3} \hfill #4}
+\newcommand{\publication}[1]{\item #1}
+
+\begin{document}
+
+\name{Dr. Sarah M. Thompson}
+
+\contact{
+Department of Computer Science, University of Excellence \\
+123 Academic Drive, Research City, ST 12345 \\
+Phone: (555) 123-4567 | Email: s.thompson@university.edu \\
+Website: \href{https://www.sarahthompson.edu}{www.sarahthompson.edu} | 
+ORCID: \href{https://orcid.org/0000-0000-0000-0000}{0000-0000-0000-0000}
+}
+
+\section{Research Interests}
+Machine Learning, Natural Language Processing, Computational Linguistics, Human-Computer Interaction, Educational Technology
+
+\section{Education}
+
+\entry{Ph.D. in Computer Science}{2018}
+{Massachusetts Institute of Technology}{Cambridge, MA}
+\begin{itemize}[noitemsep]
+    \item Dissertation: "Deep Learning Approaches for Multilingual Natural Language Understanding"
+    \item Advisor: Prof. John A. Smith
+    \item Committee: Prof. Jane Doe, Prof. Robert Johnson, Prof. Maria Garcia
+\end{itemize}
+
+\entry{M.S. in Computer Science}{2014}
+{Stanford University}{Stanford, CA}
+\begin{itemize}[noitemsep]
+    \item Thesis: "Semantic Analysis of Social Media Text for Sentiment Classification"
+    \item Advisor: Prof. Lisa Chen
+\end{itemize}
+
+\entry{B.S. in Computer Science, \textit{summa cum laude}}{2012}
+{University of California, Berkeley}{Berkeley, CA}
+\begin{itemize}[noitemsep]
+    \item Minor in Linguistics
+    \item Phi Beta Kappa, Tau Beta Pi
+\end{itemize}
+
+\section{Academic Appointments}
+
+\entry{Associate Professor}{2023--Present}
+{Department of Computer Science, University of Excellence}{Research City, ST}
+
+\entry{Assistant Professor}{2018--2023}
+{Department of Computer Science, University of Excellence}{Research City, ST}
+
+\entry{Postdoctoral Research Fellow}{2018--2019}
+{MIT Computer Science and Artificial Intelligence Laboratory}{Cambridge, MA}
+
+\section{Publications}
+
+\subsection{Peer-Reviewed Journal Articles}
+
+\begin{etaremune}[leftmargin=0.5in]
+\publication{Thompson, S.M., Johnson, R., \& Lee, K. (2024). "Transformer-based Models for Cross-lingual Sentiment Analysis." \textit{Journal of Machine Learning Research}, 25(3), 1-28.}
+
+\publication{Chen, L., Thompson, S.M., \& Williams, A. (2023). "Ethical Considerations in Large Language Model Development." \textit{AI \& Society}, 38(4), 1245-1262.}
+
+\publication{Thompson, S.M., \& Garcia, M. (2023). "Multilingual BERT for Low-Resource Language Processing." \textit{Computational Linguistics}, 49(2), 387-412.}
+
+\publication{Thompson, S.M., Smith, J.A., \& Brown, D. (2022). "Neural Machine Translation for Educational Content Adaptation." \textit{Computers \& Education}, 185, 104-118.}
+
+\publication{Rodriguez, P., Thompson, S.M., \& Kim, H. (2022). "Bias Detection in Natural Language Processing Models." \textit{Nature Machine Intelligence}, 4(8), 623-635.}
+
+\publication{Thompson, S.M., Davis, R., \& Wilson, T. (2021). "Deep Learning for Automated Essay Scoring: A Comprehensive Study." \textit{Educational Technology Research and Development}, 69(3), 1421-1445.}
+
+\publication{Thompson, S.M., \& Anderson, K. (2020). "Context-Aware Language Models for Dialogue Systems." \textit{ACM Transactions on Interactive Intelligent Systems}, 10(4), 1-32.}
+
+\publication{Thompson, S.M., Miller, J., \& Taylor, S. (2019). "Attention Mechanisms in Neural Language Models: A Survey." \textit{IEEE Transactions on Neural Networks and Learning Systems}, 30(11), 3456-3471.}
+\end{etaremune}
+
+\subsection{Peer-Reviewed Conference Papers}
+
+\begin{etaremune}[leftmargin=0.5in]
+\publication{Thompson, S.M., et al. (2024). "Large Language Models for Code Generation: Challenges and Opportunities." In \textit{Proceedings of the 38th AAAI Conference on Artificial Intelligence} (pp. 12345-12352). AAAI Press.}
+
+\publication{Lee, M., Thompson, S.M., \& Zhang, Y. (2023). "Few-Shot Learning for Domain Adaptation in NLP." In \textit{Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics} (pp. 8765-8776). ACL.}
+
+\publication{Thompson, S.M., \& Kumar, A. (2023). "Explainable AI for Educational Applications." In \textit{Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing} (pp. 4321-4332). EMNLP.}
+
+\publication{Thompson, S.M., White, R., \& Black, S. (2022). "Multilingual Pre-training for Cross-lingual Transfer Learning." In \textit{Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics} (pp. 5678-5689). ACL.}
+
+\publication{Green, P., Thompson, S.M., \& Blue, Q. (2021). "Adversarial Training for Robust NLP Models." In \textit{Advances in Neural Information Processing Systems 34} (pp. 9876-9887). NeurIPS.}
+\end{etaremune}
+
+\section{Grants and Funding}
+
+\entry{NSF CAREER Award}{2021--2026}
+{National Science Foundation}{\$500,000}
+\begin{itemize}[noitemsep]
+    \item "Developing Inclusive and Robust Natural Language Processing Systems"
+    \item Role: Principal Investigator
+\end{itemize}
+
+\entry{Google Research Scholar Award}{2022--2024}
+{Google Research}{\$60,000}
+\begin{itemize}[noitemsep]
+    \item "Bias Mitigation in Large Language Models"
+    \item Role: Principal Investigator
+\end{itemize}
+
+\entry{Amazon Research Award}{2020--2022}
+{Amazon Science}{\$80,000}
+\begin{itemize}[noitemsep]
+    \item "Conversational AI for Educational Applications"
+    \item Role: Principal Investigator
+\end{itemize}
+
+\section{Teaching}
+
+\subsection{Courses Taught}
+
+\textbf{University of Excellence} (2018--Present)
+\begin{itemize}[noitemsep]
+    \item CS 4850: Natural Language Processing (Fall 2019, 2020, 2021, 2022, 2023)
+    \item CS 6850: Advanced Topics in NLP (Spring 2020, 2021, 2022, 2023, 2024)
+    \item CS 3200: Introduction to Machine Learning (Fall 2018, Spring 2019)
+    \item CS 1100: Introduction to Computer Science (Spring 2019)
+\end{itemize}
+
+\subsection{Student Supervision}
+
+\textbf{Ph.D. Students}
+\begin{itemize}[noitemsep]
+    \item Michael Chen (2020--Present): "Multilingual Language Models for Low-Resource Languages"
+    \item Jennifer Rodriguez (2021--Present): "Ethical AI in Natural Language Processing"
+    \item David Kim (2022--Present): "Conversational AI for Educational Support"
+\end{itemize}
+
+\textbf{M.S. Students Graduated}
+\begin{itemize}[noitemsep]
+    \item Sarah Johnson (2023): "Bias Detection in Pre-trained Language Models"
+    \item Robert Wilson (2022): "Neural Machine Translation for Technical Documentation"
+    \item Lisa Anderson (2021): "Sentiment Analysis for Social Media Monitoring"
+\end{itemize}
+
+\section{Service}
+
+\subsection{Editorial Service}
+\begin{itemize}[noitemsep]
+    \item Associate Editor, \textit{Computational Linguistics} (2023--Present)
+    \item Guest Editor, \textit{AI Magazine} Special Issue on "AI in Education" (2022)
+    \item Editorial Board Member, \textit{Journal of Educational Technology Research} (2021--Present)
+\end{itemize}
+
+\subsection{Conference Service}
+\begin{itemize}[noitemsep]
+    \item Program Committee Chair, EMNLP 2024
+    \item Area Chair, ACL 2023, 2024
+    \item Program Committee Member: NeurIPS (2020--2023), ICML (2021--2024), AAAI (2019--2024)
+    \item Reviewer: Nature Machine Intelligence, Science, JMLR, TACL
+\end{itemize}
+
+\subsection{Professional Service}
+\begin{itemize}[noitemsep]
+    \item Member, NSF CISE Advisory Committee (2023--2026)
+    \item Chair, University Excellence Faculty Search Committee (2022--2023)
+    \item Member, ACL Ethics Committee (2021--2024)
+\end{itemize}
+
+\section{Awards and Honors}
+
+\begin{itemize}[noitemsep]
+    \item Outstanding Faculty Award, University of Excellence (2023)
+    \item NSF CAREER Award (2021)
+    \item Best Paper Award, EMNLP 2023
+    \item Google Research Scholar Award (2022)
+    \item Rising Star in AI Award, AI2 (2020)
+    \item Outstanding Teaching Award, University of Excellence (2019)
+    \item Best Dissertation Award, MIT EECS (2018)
+\end{itemize}
+
+\section{Professional Memberships}
+
+\begin{itemize}[noitemsep]
+    \item Association for Computational Linguistics (ACL)
+    \item Association for the Advancement of Artificial Intelligence (AAAI)
+    \item Institute of Electrical and Electronics Engineers (IEEE)
+    \item Association for Computing Machinery (ACM)
+\end{itemize}
+
+\section{Selected Invited Talks}
+
+\begin{itemize}[noitemsep]
+    \item "The Future of Multilingual AI," Keynote, International Conference on Computational Linguistics, 2024
+    \item "Ethical Considerations in Large Language Models," Stanford AI Lab Seminar, 2023
+    \item "Cross-lingual Transfer Learning," Google Research, 2023
+    \item "NLP for Education," Microsoft Research, 2022
+    \item "Bias in Language Models," MIT CSAIL Seminar, 2021
+\end{itemize}
+
+\end{document}

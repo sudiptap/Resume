@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{John}{Doe}
+\title{Software Engineer}
+\address{123 Main Street}{Anytown, ST 12345}{USA}
+\phone[mobile]{+1~(555)~123~4567}
+\phone[fixed]{+1~(555)~765~4321}
+\email{john.doe@email.com}
+\homepage{www.johndoe.com}
+\social[linkedin]{johndoe}
+\social[github]{johndoe}
+\extrainfo{Available for relocation}
+\photo[64pt][0.4pt]{picture}
+\quote{Passionate software engineer with expertise in full-stack development}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2020--2024}{Bachelor of Science in Computer Science}{University Name}{City, State}{\textit{GPA: 3.8/4.0}}{Relevant coursework: Data Structures, Algorithms, Software Engineering, Database Systems}
+\cventry{2018--2020}{Associate of Science in Mathematics}{Community College}{City, State}{\textit{GPA: 3.9/4.0}}{Dean's List for 4 consecutive semesters}
+
+\section{Experience}
+\cventry{June 2024--Present}{Software Engineer}{Tech Company Inc.}{City, State}{}{
+\begin{itemize}
+\item Developed and maintained scalable web applications using React, Node.js, and PostgreSQL
+\item Collaborated with cross-functional teams of 8+ members to deliver features on time
+\item Implemented automated testing strategies that reduced production bugs by 40\%
+\item Optimized database queries resulting in 25\% improvement in application performance
+\item Mentored 2 junior developers in best practices and code review processes
+\end{itemize}}
+
+\cventry{May 2023--August 2023}{Software Development Intern}{Innovation Labs}{City, State}{}{
+\begin{itemize}
+\item Built RESTful APIs using Python Flask framework serving 1000+ daily requests
+\item Participated in agile development process including daily standups and sprint planning
+\item Created comprehensive documentation for internal tools and development processes
+\item Assisted in migrating legacy systems to AWS cloud infrastructure
+\end{itemize}}
+
+\cventry{January 2023--May 2023}{Teaching Assistant}{University Name}{City, State}{}{
+\begin{itemize}
+\item Assisted 150+ students in understanding programming concepts in Java and Python
+\item Conducted weekly lab sessions and office hours for algorithm and data structure courses
+\item Graded assignments and provided detailed feedback to improve student learning outcomes
+\item Collaborated with professors to develop course materials and programming assignments
+\end{itemize}}
+
+\section{Technical Skills}
+\cvdoubleitem{Programming Languages}{Java, Python, C/C++, JavaScript, TypeScript, SQL}{Web Technologies}{React, Node.js, HTML5, CSS3, REST APIs}
+\cvdoubleitem{Frameworks \& Libraries}{Flask, Express.js, Spring Boot, jQuery, Bootstrap}{Databases}{PostgreSQL, MongoDB, MySQL, Redis}
+\cvdoubleitem{Tools \& Platforms}{Git, Docker, AWS, Jenkins, JIRA, VS Code}{Operating Systems}{Linux, macOS, Windows}
+
+\section{Projects}
+\cventry{2024}{E-Commerce Platform}{\href{https://github.com/johndoe/ecommerce}{GitHub}}{}{}{
+Full-stack web application built with React and Node.js featuring user authentication, payment processing with Stripe, and inventory management. Deployed on AWS with CI/CD pipeline.
+\begin{itemize}
+\item Implemented responsive design supporting mobile and desktop users
+\item Integrated third-party APIs for payment processing and shipping calculations
+\item Achieved 99.9\% uptime with proper error handling and monitoring
+\end{itemize}}
+
+\cventry{2023}{Machine Learning Stock Predictor}{\href{https://github.com/johndoe/ml-stocks}{GitHub}}{}{}{
+Python-based machine learning application using TensorFlow to predict stock price trends with historical market data analysis.
+\begin{itemize}
+\item Achieved 85\% accuracy in price trend prediction using LSTM neural networks
+\item Created interactive data visualization dashboard using Plotly and Dash
+\item Processed and analyzed over 10 years of historical stock market data
+\end{itemize}}
+
+\cventry{2023}{Task Management Mobile App}{\href{https://github.com/johndoe/taskapp}{GitHub}}{}{}{
+Cross-platform mobile application developed with React Native for personal and team task management.
+\begin{itemize}
+\item Implemented real-time synchronization using Firebase Firestore
+\item Published to Google Play Store with 500+ downloads and 4.5-star rating
+\item Features include push notifications, offline mode, and collaborative workspaces
+\end{itemize}}
+
+\section{Certifications}
+\cventry{2024}{AWS Certified Developer - Associate}{Amazon Web Services}{}{}{Credential ID: AWS-DEV-2024-001}
+\cventry{2023}{Oracle Certified Associate, Java SE 8 Programmer}{Oracle}{}{}{Credential ID: OCA-JAVA-2023-001}
+
+\section{Leadership \& Activities}
+\cventry{2021--2024}{President}{Computer Science Club}{University Name}{}{
+\begin{itemize}
+\item Led organization of 100+ members with focus on technical skill development
+\item Organized weekly workshops, coding competitions, and industry networking events
+\item Coordinated with 15+ industry professionals for guest speaker series
+\item Managed annual budget of \$5,000 and increased membership by 150\%
+\end{itemize}}
+
+\cventry{2022--2024}{Volunteer Coding Instructor}{Local Community Center}{City, State}{}{
+\begin{itemize}
+\item Taught basic programming concepts to underserved youth aged 12-18
+\item Developed curriculum for introductory Python and web development courses
+\item Mentored 25+ students in their first programming projects
+\end{itemize}}
+
+\section{Awards \& Honors}
+\cvlistitem{Dean's List - 6 consecutive semesters (2020-2024)}
+\cvlistitem{Outstanding Student in Computer Science Award (2024)}
+\cvlistitem{First Place - University Hackathon (2023)}
+\cvlistitem{Scholarship Recipient - Technology Excellence Scholarship (2022-2024)}
+
+\section{Languages}
+\cvitemwithcomment{English}{Native proficiency}{}
+\cvitemwithcomment{Spanish}{Conversational proficiency}{}
+\cvitemwithcomment{French}{Basic proficiency}{}
+
+\end{document}
