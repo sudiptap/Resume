@@ -80,140 +80,87 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Alex Chen} \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 555-123-4567 ~ 
-    \href{mailto:alex.chen@email.com}{\raisebox{-0.2\height}\faEnvelope\ alex.chen@email.com} ~ 
-    \href{https://linkedin.com/in/alexchen}{\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/alexchen} ~
-    \href{https://github.com/alexchen}{\raisebox{-0.2\height}\faGithub\ github.com/alexchen}
+    \textbf{\Huge \scshape Sudipta Pathak} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1 (848)-373-5136 ~ 
+    \href{mailto:sudipto.pathak@email.com}{\raisebox{-0.2\height}\faEnvelope\ sudipto.pathak@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/sudipta-pathak-a6910117/}{\raisebox{-0.2\height}\faLinkedin\ https://www.linkedin.com/in/sudipta-pathak-a6910117/} ~
+    \href{https://github.com/sudiptap}{\raisebox{-0.2\height}\faGithub\ https://github.com/sudiptap}
     \vspace{-8pt}
 \end{center}
 
-% Two column layout
-\begin{minipage}[t]{0.32\textwidth}
-
-%-----------SKILLS-----------
-\section{Technical Skills}
- \textbf{Languages} \\
- \small{Python, R, SQL, Scala, Java} \\
- 
- \textbf{ML/DL Frameworks} \\
- \small{PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM} \\
- 
- \textbf{MLOps \& Cloud} \\
- \small{MLflow, Kubeflow, Docker, Kubernetes, AWS, GCP, Azure} \\
- 
- \textbf{Data Engineering} \\
- \small{Spark, Kafka, Hadoop, Snowflake, Databricks} \\
- 
- \textbf{LLM \& NLP} \\
- \small{LangChain, Hugging Face, OpenAI API, BERT, GPT} \\
- 
- \textbf{DevOps} \\
- \small{Jenkins, GitHub Actions, Terraform, Prometheus} \\
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Stanford University}{Stanford, CA}
-      {M.S. in Computer Science}{2020 -- 2022}
-      \resumeItemListStart
-        \resumeItem{Focus: Artificial Intelligence}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {UC Berkeley}{Berkeley, CA}
-      {B.S. in EECS}{2016 -- 2020}
-      \resumeItemListStart
-        \resumeItem{GPA: 3.8/4.0, Magna Cum Laude}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------CERTIFICATIONS-----------
-\section{Certifications}
-\small{
-\textbf{AWS ML Specialty} (2023) \\
-\textbf{GCP ML Engineer} (2023) \\
-\textbf{TensorFlow Developer} (2022)
-}
-
-\end{minipage}%
-\hfill
-\begin{minipage}[t]{0.66\textwidth}
-
 %-----------SUMMARY-----------
 \section{Professional Summary}
-\small{Experienced Machine Learning Engineer with 4+ years developing and deploying scalable ML systems in production. Expertise in end-to-end ML pipeline development, from data preprocessing to model deployment and monitoring. Proven track record of building recommendation systems, NLP applications, and computer vision models serving millions of users.}
+\small{Senior Machine Learning Infrastructure Engineer with 8+ years of experience building and scaling ML platforms and distributed systems in production. Skilled in end-to-end ML lifecycle management, from feature stores and data pipelines to distributed training, deployment, and monitoring. Proficient in Kubernetes, Docker, ML orchestration (Kubeflow, Ray, Airflow), infrastructure-as-code (Terraform), GPU optimization, and Linux internals. Experienced in delivering secure, high-performance ML services in multi-region cloud environments while mentoring peers and collaborating across teams.}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, Java, SQL} \\
+     \textbf{ML/DL Frameworks}{: PyTorch, vLLM, Scikit-learn} \\
+     \textbf{MLOps \& Cloud}{: AWS (SageMaker, EC2, S3, Lambda, ECS), MLflow, Kubeflow, Docker, Kubernetes} \\
+     \textbf{Data Engineering}{: Apache Spark, Kafka, Hadoop, Snowflake, Databricks, Apache Beam} \\
+     \textbf{LLM \& NLP}{: LangChain, LangGraph, Hugging Face, OpenAI API, BERT, GPT, Transformers} \\
+     \textbf{DevOps \& Infrastructure}{: Terraform, Jenkins, GitHub Actions, Prometheus, Grafana, Linux} \\
+    }}
+ \end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Senior Machine Learning Engineer}{Jan 2023 -- Present}
-      {Meta}{Menlo Park, CA}
+      {Senior Machine Learning Engineer}{Sept 2023 -- Present}
+      {JPMorgan Chase}{Jersey City, NJ}
       \resumeItemListStart
-        \resumeItem{Led development of recommendation system serving 50M+ daily users, improving engagement by 15\%}
-        \resumeItem{Built real-time feature engineering pipeline using Kafka and Spark, reducing latency by 40\%}
-        \resumeItem{Implemented A/B testing framework for ML models, enabling data-driven deployment}
-        \resumeItem{Mentored 3 junior engineers and established ML best practices across the team}
+        \resumeItem{Co-developed LLMSuite, an internal marketplace for deploying ML products into AWS, replacing ad-hoc, downtime-prone deployment processes with a scalable, standardized platform}
+        \resumeItem{Led a team of 3 engineers to design and build a Natural Language to Query/Python code generation engine, enabling analysts and developers to interact with data and APIs without manual coding}
+        \resumeItem{Scaled the system to support 300K+ internal users, ensuring high availability, automated scaling, and secure operation in a cloud-native AWS environment}
+        \resumeItem{Engineered the platform's cloud infrastructure using Terraform and AWS services (ECS, Lambda, S3, API Gateway, CloudWatch), integrating agentic ML workflows built with LangChain, LangGraph, and OpenAI APIs}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Machine Learning Engineer}{Jun 2022 -- Dec 2022}
-      {Uber}{San Francisco, CA}
+      {Software Engineer II, Public Cloud Infrastructure}{Sept 2022 -- July 2023}
+      {Amazon Web Services}{Jersey City, NJ}
       \resumeItemListStart
-        \resumeItem{Developed demand forecasting models using LSTM and Transformers, improving accuracy by 25\%}
-        \resumeItem{Built MLOps pipeline with MLflow and Kubernetes, automating training and deployment}
-        \resumeItem{Optimized model inference latency from 200ms to 50ms using TensorRT and quantization}
-        \resumeItem{Collaborated with product teams to integrate ML models into mobile applications}
+        \resumeItem{Led a team of 6 engineers to deliver AWS Glue support for large instance types (released in May 2023), enabling customers to run high-memory, high-throughput ETL workloads}
+        \resumeItem{Designed and implemented a backend feature to resolve hot partition bottlenecks, improving service scalability and performance for distributed data workloads}
+        \resumeItem{Eliminated a recurring customer pain point by introducing automated cleanup for leaked Elastic Network Interfaces (ENIs), reducing operational overhead and AWS resource waste}
+        \resumeItem{Independently architected and drove the development of a latency-optimization feature that reduced Glue job startup times, improving time-to-insight for customers}
+        \resumeItem{Participated in 24/7 on-call rotations, triaging and resolving high-priority, customer-facing production issues to maintain service reliability and SLAs}
       \resumeItemListEnd
 
     \resumeSubheading
-      {ML Engineering Intern}{Jun 2021 -- Sep 2021}
-      {Google}{Mountain View, CA}
+      {Senior Software Engineer, Bloomberg Cloud Infrastructure}{July 2020 -- Sep 2022}
+      {Bloomberg}{Princeton, NJ}
       \resumeItemListStart
-        \resumeItem{Implemented BERT-based text classification for content moderation, achieving 92\% accuracy}
-        \resumeItem{Developed data preprocessing pipeline handling 10TB+ of text data using Apache Beam}
-        \resumeItem{Created model monitoring dashboard using TensorBoard and custom metrics}
+        \resumeItem{Designed and implemented end-to-end pipelines and microservices for ingestion and parsing of large-scale financial and news data, enabling faster and more reliable downstream analytics}
+        \resumeItem{Led the migration of critical services from legacy C++ architecture to an event-driven, asynchronous Python microservices framework backed by distributed storage}
+        \resumeItem{Drove the containerization and deployment of backend services into Kubernetes, standardizing deployment workflows and improving service resilience and scalability}
+        \resumeItem{Built and maintained production-ready, containerized services with automated monitoring, logging, and alerting for rapid issue detection and resolution}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer}{Oct 2017 -- July 2020}
+      {Siemens Corporation}{Princeton, NJ}
+      \resumeItemListStart
+        \resumeItem{Led a DARPA-funded research initiative to design and deliver scalable platforms for information extraction and document understanding in defense and intelligence applications.}
+        \resumeItem{Architected and implemented end-to-end systems for advanced machine learning workflows, including processing and analysis of complex data types such as point cloud datasets.}
+        \resumeItem{Directed cross-functional engineering efforts, ensuring timely delivery of research prototypes and alignment with evolving technical requirements.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{LLM-Powered Code Review Assistant} $|$ \emph{Python, LangChain, OpenAI API}}{2024}
-          \resumeItemListStart
-            \resumeItem{Built intelligent code review system using GPT-4 and custom prompting strategies}
-            \resumeItem{Integrated with GitHub API to analyze pull requests, processing 500+ reviews daily}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-          {\textbf{Real-time Fraud Detection System} $|$ \emph{Python, XGBoost, Kafka, Redis}}{2023}
-          \resumeItemListStart
-            \resumeItem{Designed ML pipeline for real-time fraud detection with sub-100ms latency}
-            \resumeItem{Achieved 95\% precision and 88\% recall using ensemble methods}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-          {\textbf{Medical Image Classification} $|$ \emph{PyTorch, OpenCV, AWS SageMaker}}{2022}
-          \resumeItemListStart
-            \resumeItem{Developed CNN model achieving 94\% accuracy using transfer learning}
-            \resumeItem{Deployed with AWS SageMaker with automatic scaling and monitoring}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-%-----------PUBLICATIONS-----------
-\section{Publications}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-            {\textbf{"Scalable Real-time Recommendation Systems"} $|$ \emph{KDD 2023}}{2023}
-        \resumeProjectHeading
-            {\textbf{"Efficient Model Serving for Large-scale ML Applications"} $|$ \emph{MLSys 2022}}{2022}
-    \resumeSubHeadingListEnd
-
-\end{minipage}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Connecticut}{Storrs, CT}
+      {PhD in Computer Science}{2011 -- 2017}
+      \resumeItemListStart
+        \resumeItem{Focus: Artificial Intelligence and Machine Learning}
+        \resumeItem{Dissertation: "Scalable Machine Learning Infrastructure for Real-time Applications"}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 \end{document}
